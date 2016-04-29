@@ -18,7 +18,7 @@
 		#teams {
 			line-height:30px;
 			background-color:#eeeeee;
-			height:300px;
+			height:700px;
 			width:100px;
 			float:left;
 			padding:5px; 
@@ -35,6 +35,28 @@
 			text-align:center;
 			padding:5px; 
 		}
+		.score-board1 {
+      text-align: left;
+      padding: 25px;
+    }
+    .team {
+      display: inline-block;
+      padding: 15px;
+    }
+    .team h4 {
+      font-weight: bold;
+    }
+    .score-box {
+      border: 3px solid black;
+      padding: 30px;
+      color:  #808080;
+    }
+    	.score-board2 {
+      text-align: left;
+      padding: 25px;
+    }
+
+
 	</style>
 </head>
 <body>
@@ -47,9 +69,15 @@
     <img src="/img/bracket.jpg" alt="Bracket" style="width:500px;height:350px;">
   </div>
   <div id="teams">
+  <div>Teams</div>
 	DAL<br>
 	STL<br>
-	NSH
+	NSH<br>
+	SJ<br>
+	WAS<br>
+	PIT<br>
+	NYI<br>
+	TBL
   </div>
 
   <div id="title">
@@ -61,10 +89,39 @@
   <div id="news0"></div>
   </div>
 
-  
-
   <br>
-  <div id="example"></div>
+  
+  <div class="score-board1">
+  <div class="team">
+      <h4 id="hometeam">DAL</h4>
+      <div class="score-box" id="homescore1">
+        <p>0</p>
+      </div>
+    </div>
+    <div class="team">
+      <h4 id="awayteam">STL</h4>
+      <div class="score-box" id="awayscore1">
+        <p>0</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="score-board2">
+  <div class="team">
+      <h4 id="hometeam">SJ</h4>
+      <div class="score-box" id="homescore2">
+        <p>0</p>
+      </div>
+    </div>
+    <div class="team">
+      <h4 id="awayteam">NSH</h4>
+      <div class="score-box" id="awayscore2">
+        <p>0</p>
+      </div>
+    </div>
+  </div>
+  </div>
 			
 </body>
 </html>
