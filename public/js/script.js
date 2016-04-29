@@ -1,23 +1,5 @@
-/*var poll = function () {
-    var headline = '';
-    $.ajax({
-            url: 'https://api.fantasydata.net/nhl/v2/JSON/GamesByDate/2016-APR-29',
-            beforeSend: function(xhrObj){
-                // Request headers
-                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","96f3fa334d4147039f3fc54c80bf2b54");
-            },
-            type: "GET",
-            // Request body
-            data: "{body}",
-        })
-        .done(function(data) {
-            headline = data[0].GameID;
-        })
-        .fail(function() {
-            alert("error");
-        });
-        return headline;
-}*/
+
+/* Helper Methods used since API calls were rejected */
 var articles = [ {headline: 'Anaheim fires head coach Bruce Boudreau',
  link: 'http://www.rotoworld.com/player/nhl/3880/bruce-boudreau'}, 
  {headline: 'T.J. Oshie\'s hat trick to lift Caps over Pens',
@@ -81,7 +63,7 @@ var score4 = function () {
 	}
 }
 
-//var hed = poll();
+// React classes
 var Articles = React.createClass({
   render: function() {
     return (
@@ -111,6 +93,8 @@ render: function() {
   }
 });
 
+// Calls to update the elements
+
 setInterval(function () {
   ReactDOM.render(<Score score={score1()} />,
   document.getElementById('homescore1')); }, 2000);
@@ -133,3 +117,26 @@ setInterval(function () {
     document.getElementById('news0')
   );
 }, 5000);
+
+/* ATTEMPTS TO USE API
+rejected
+var poll = function () {
+    var headline = '';
+    $.ajax({
+            url: 'https://api.fantasydata.net/nhl/v2/JSON/GamesByDate/2016-APR-29',
+            beforeSend: function(xhrObj){
+                // Request headers
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","96f3fa334d4147039f3fc54c80bf2b54");
+            },
+            type: "GET",
+            // Request body
+            data: "{body}",
+        })
+        .done(function(data) {
+            headline = data[0].GameID;
+        })
+        .fail(function() {
+            alert("error");
+        });
+        return headline;
+}*/

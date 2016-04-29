@@ -10,8 +10,8 @@
     "content_scripts": [
         {
             "matches": [ "*://*/*" ],
-            "css": [ "content_scripts/worst-thing-ever.css"],
-            "js": [ "content_scripts/jquery.min.js", "content_scripts/fun_replacement.js",
+            "css": [],
+            "js": [ "content_scripts/jquery.min.js", 
             "content_scripts/api_poll.js", "content_scripts/main.js" ]
         }
     ],
@@ -20,7 +20,7 @@
     ],
     "browser_action": {
         "default_popup": "popup/popup.html",
-        "default_icon": "popup/icon.png",
+        "default_icon": "popup/nhl.png",
         "default_title": "NHL Playoff Picture"
     }
 

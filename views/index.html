@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8" />
-	<title>Hello React</title>
-	<script src="https://fb.me/react-15.0.1.js"></script>
-	<script src="https://fb.me/react-dom-15.0.1.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script type="text/babel" src="/js/script.js"></script>
-	<style>
-		#header {
-			background-color:black;
-			color:white;
-			text-align:center;
-			padding:5px;
-		}
-		#teams {
-			line-height:30px;
-			background-color:#eeeeee;
-			height:700px;
-			width:100px;
-			float:left;
-			padding:5px; 
-		}
-		#news {
-			width:350px;
-			float:left;
-			padding:10px; 
-		}
-		#footer {
-			background-color:black;
-			color:white;
-			clear:both;
-			text-align:center;
-			padding:5px; 
-		}
-		.score-board1 {
+  <meta charset="UTF-8" />
+  <title>Hello React</title>
+  <script src="https://fb.me/react-15.0.1.js"></script>
+  <script src="https://fb.me/react-dom-15.0.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/babel" src="/js/script.js"></script>
+  <style>
+    #header {
+      background-color:black;
+      color:white;
+      text-align:center;
+      padding:5px;
+    }
+    #teams {
+      line-height:30px;
+      background-color:#eeeeee;
+      height:700px;
+      width:100px;
+      float:left;
+      padding:5px; 
+    }
+    #news {
+      width:350px;
+      float:left;
+      padding:10px; 
+    }
+    #footer {
+      background-color:black;
+      color:white;
+      clear:both;
+      text-align:center;
+      padding:5px; 
+    }
+    .score-board1 {
       text-align: left;
       padding: 25px;
     }
@@ -51,48 +51,48 @@
       padding: 30px;
       color:  #808080;
     }
-    	.score-board2 {
+    .score-board2 {
       text-align: left;
       padding: 25px;
     }
 
 
-	</style>
+  </style>
 </head>
 <body>
 
 
   <div id="header">
-	<h1>NHL Playoff Picture</h1>
+    <h1>NHL Playoff Picture</h1>
   </div>
   <div>
-    <img src="/img/bracket.jpg" alt="Bracket" style="width:500px;height:350px;">
+    <img src="/img/bracket.jpg" alt="Bracket" style="width:100%;text-align: center;">
   </div>
   <div id="teams">
-  <div>Teams</div>
-	DAL<br>
-	STL<br>
-	NSH<br>
-	SJ<br>
-	WAS<br>
-	PIT<br>
-	NYI<br>
-	TBL
+    <div>Teams</div>
+    DAL<br>
+    STL<br>
+    NSH<br>
+    SJ<br>
+    WAS<br>
+    PIT<br>
+    NYI<br>
+    TBL
   </div>
 
   <div id="title">
-	<h1>NHL</h1>
-	<p>Dashboard for all things NHL Playoffs</p>
+    <h1>NHL</h1>
+    <p>Dashboard for all things NHL Playoffs</p>
   </div>
 
   <div><h2>News</h2>
-  <div id="news0"></div>
+    <div id="news0"></div>
   </div>
 
   <br>
   
   <div class="score-board1">
-  <div class="team">
+    <div class="team">
       <h4 id="hometeam">DAL</h4>
       <div class="score-box" id="homescore1">
         <p>0</p>
@@ -105,23 +105,23 @@
       </div>
     </div>
   </div>
-  </div>
+</div>
 
-  <div class="score-board2">
+<div class="score-board2">
   <div class="team">
-      <h4 id="hometeam">SJ</h4>
-      <div class="score-box" id="homescore2">
-        <p>0</p>
-      </div>
-    </div>
-    <div class="team">
-      <h4 id="awayteam">NSH</h4>
-      <div class="score-box" id="awayscore2">
-        <p>0</p>
-      </div>
+    <h4 id="hometeam">SJ</h4>
+    <div class="score-box" id="homescore2">
+      <p>0</p>
     </div>
   </div>
+  <div class="team">
+    <h4 id="awayteam">NSH</h4>
+    <div class="score-box" id="awayscore2">
+      <p>0</p>
+    </div>
   </div>
-			
+</div>
+</div>
+
 </body>
 </html>

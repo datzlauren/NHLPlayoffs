@@ -9,7 +9,8 @@ var JS = [
 var BRUCE_FILES = [
   'content_scripts/api_poll.js',
   'manifest.json',
-  'popup/popup.js'
+  'popup/popup.js',
+  'app.js'
 ];
 
 gulp.task('eslint', function () {
