@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <title>NHLPlayoffPicture</title>
+  <style>
+    .score-board {
+      text-align: center;
+      padding: 25px;
+    }
+    .team {
+      display: inline-block;
+      padding: 15px;
+    }
+    .team h4 {
+      font-weight: bold;
+    }
+    .score-box {
+      border: 3px solid black;
+      padding: 30px;
+      color:  #808080;
+    }
+  </style>
+</head>
+<body>
+  <div class="score-board">
+
+    <div class="team">
+      <h4 id="hometeam">DAL</h4>
+      <div class="score-box" id="homescore">
+        0
+      </div>
+    </div>
+    <div class="team">
+      <h4 id="awayteam">STL</h4>
+      <div class="score-box" id="awayscore">
+        0
+      </div>
+    </div>
+    <a href="http://localhost:3000" class="clickme">See More!</a>
+  </div>
+
+  <script src="jquery.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
+
